@@ -44,3 +44,11 @@
 @keyframes loader-pulse{to{opacity:.48}}
 @media(max-width:600px){.launch-loader__skeleton{padding:20px}.skeleton-nav{gap:12px}.skeleton-nav i{width:100px;height:25px}.skeleton-nav span{display:none}.skeleton-nav span:last-child{display:block;width:40px}.skeleton-hero{min-height:600px;height:calc(100dvh - 100px);margin-top:20px;padding:40px 25px;position:relative}.skeleton-hero>div{width:100%;gap:14px}.skeleton-hero b{height:50px}.skeleton-hero em{height:15px}.skeleton-hero strong{position:absolute;left:24%;bottom:13%;width:52vw}.skeleton-cards{display:none}}
 @media(prefers-reduced-motion:reduce){.launch-loader{transition:none}.launch-loader__mark,.skeleton-nav i,.skeleton-nav span,.skeleton-hero b,.skeleton-hero em,.skeleton-hero strong,.skeleton-cards i{animation:none}.launch-loader--brand .launch-loader__mark{opacity:1}.launch-loader--skeleton .launch-loader__skeleton{transition:none}}
+
+/* Mobile labels stay clear of the product photography and the action control. */
+.site-header{position:sticky;top:0;z-index:90;background:var(--paper);transition:box-shadow .22s ease,border-color .22s ease}
+.site-header.is-scrolled{border-bottom:1px solid #ded9cf;box-shadow:0 8px 24px rgb(41 37 31 / .06)}
+.world-picture .world-fragrance{object-fit:contain;padding:42px;background:#d9c6c2}
+html{scroll-padding-top:116px}
+@media(max-width:600px){.scent-slide{overflow:visible}.scent-slide img{border-radius:170px 170px 24px 24px}.slide-plus{top:14px;right:14px;bottom:auto;width:44px;height:44px;z-index:5}.home-brand-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));justify-content:initial;gap:8px}.home-brand-tabs button{grid-column:span 1;min-width:0;padding:10px 6px;white-space:nowrap}.home-brand-tabs button:nth-child(5){grid-column:2}.home-brand-tabs button:nth-child(6){grid-column:3}}
+.slide-plus{box-shadow:0 8px 18px rgb(41 37 31 / .16)}
