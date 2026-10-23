@@ -52,3 +52,4 @@
 html{scroll-padding-top:116px}
 @media(max-width:600px){.scent-slide{overflow:visible}.scent-slide img{border-radius:170px 170px 24px 24px}.slide-plus{top:14px;right:14px;bottom:auto;width:44px;height:44px;z-index:5}.home-brand-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));justify-content:initial;gap:8px}.home-brand-tabs button{grid-column:span 1;min-width:0;padding:10px 6px;white-space:nowrap}.home-brand-tabs button:nth-child(5){grid-column:2}.home-brand-tabs button:nth-child(6){grid-column:3}}
 .slide-plus{box-shadow:0 8px 18px rgb(41 37 31 / .16)}
+@media(min-width:601px){.carousel-play{display:none}}
