@@ -1,0 +1,3 @@
+export const WHATSAPP_NUMBER='2349131637118';
+export const WHATSAPP_URL=`https://wa.me/${WHATSAPP_NUMBER}`;
+export function contactDraft(form:FormData){const values:Record<string,string>={};for(const key of ['first-name','last-name','your-email','number','your-message']){const value=String(form.get(key)??'').trim();if(!value)throw new Error('Please complete all required fields.');if(value.length>(key==='your-message'?2000:400))throw new Error('Please shorten your message or contact details.');values[key]=value;}if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(values['your-email']))throw new Error('Enter a valid email address.');return `Hello Lattafa Nigeria,\n\n${values['your-message']}\n\n${values['first-name']} ${values['last-name']}\n${values['your-email']}\n${values.number}`;}

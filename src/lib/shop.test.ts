@@ -1,0 +1,8 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { products, findProduct, readBag, addToBag, bagTotal, matchesMood, orderEmail } from './shop';
+test('catalog keeps source prices, unique ids and secure source URLs', () => { assert.ok(products.length > 600); assert.equal(new Set(products.map(p => p.id)).size, products.length); assert.ok(products.every(p => Number.isFinite(p.price) && p.price >= 0 && p.url.startsWith('https://lattafang.com/'))); });
+test('bag rejects corrupt, unknown, duplicate and unavailable items', () => { const p = findProduct('khamrah'); assert.deepEqual(readBag('bad json'), []); assert.deepEqual(readBag('{}'), []); assert.deepEqual(readBag(JSON.stringify([{ id: p.id, quantity: 2 }, { id: p.id, quantity: 1 }, { id: -1, quantity: 1 }, { id: p.id, quantity: 11 }])), [{ id: p.id, quantity: 2 }]); assert.deepEqual(addToBag([], { ...p, inStock: false }), []); });
+test('bag totals and quantity limits stay correct', () => { const p = findProduct('khamrah'); let bag = addToBag([], p); bag = addToBag(bag, p); assert.equal(bagTotal(bag), p.price * 2); for (let i = 0; i < 12; i++)
+    bag = addToBag(bag, p); assert.equal(bag[0].quantity, 10); assert.ok(orderEmail(bag).startsWith('mailto:support@lattafang.com?')); });
+test('mood discovery uses actual product content', () => { assert.ok(matchesMood(findProduct('khamrah'), 'Warm')); assert.ok(matchesMood(findProduct('fakhar-lattafa-women'), 'Floral')); assert.ok(matchesMood(findProduct('nebras'), 'All')); });

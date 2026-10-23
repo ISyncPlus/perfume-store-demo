@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.DS_Store
+*.tsbuildinfo
+.taste-skill/inspect/
+.taste-skill/before/
+research/raw/
+.sites-local/
