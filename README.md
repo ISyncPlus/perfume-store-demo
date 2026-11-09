@@ -1,6 +1,21 @@
-# ✦ Lattafa Scent Studio
+<div align="center">
+  <img src="./public/assets/catalog/brand-logo.svg" alt="Lattafa" width="220">
 
-### A fragrance discovery experience with a point of view.
+  <h1>Lattafa Scent Studio</h1>
+
+  <p><strong>A fragrance discovery experience with a point of view.</strong></p>
+
+  <p>
+    <img src="https://img.shields.io/badge/React-19-1f3d37?style=for-the-badge&logo=react&logoColor=f7f6f2" alt="React 19">
+    <img src="https://img.shields.io/badge/TypeScript-5.9-cb8f5b?style=for-the-badge&logo=typescript&logoColor=f7f6f2" alt="TypeScript">
+    <img src="https://img.shields.io/badge/Vite-7-8c4a3f?style=for-the-badge&logo=vite&logoColor=f7f6f2" alt="Vite">
+    <img src="https://img.shields.io/badge/Demo-Local_only-2b2926?style=for-the-badge" alt="Local demo">
+  </p>
+</div>
+
+<div align="center">
+  <img src="./public/assets/perfume-atmosphere.jpg" alt="Warm perfume atmosphere with glass, amber and shadow" width="100%">
+</div>
 
 Lattafa Scent Studio is an editorial storefront concept built around one simple
 idea:
@@ -21,6 +36,14 @@ every visitor a more personal way in:
 This repository is a **front-end pitch and interaction prototype**. It is not a
 production checkout, payment service, inventory system, or customer database.
 
+<div align="center">
+  <img src="./public/assets/khamrah-cutout.png" alt="Khamrah bottle cutout" width="180">
+  <img src="./public/assets/fakhar-black-cutout.png" alt="Fakhar Black bottle cutout" width="180">
+  <img src="./public/assets/fakhar-rose-cutout.png" alt="Fakhar Rose bottle cutout" width="180">
+</div>
+
+<p align="center"><em>Warm amber. Clean glass. A catalogue made personal.</em></p>
+
 ---
 
 ## 🌒 The atmosphere
@@ -38,6 +61,34 @@ warm paper, dark ink, glass, amber, fabric, and a bottle waiting in the light.
 
 The result is intentionally closer to a fragrance campaign than a conventional
 marketplace grid.
+
+### 🎨 The palette
+
+The README mirrors the interface palette so the project’s personality is visible
+before the app is opened:
+
+<table>
+  <tr>
+    <td align="center" width="20%"><div style="background:#f7f6f2;padding:28px;border:1px solid #d9d5cc;">&nbsp;</div><strong>Paper</strong><br><code>#F7F6F2</code></td>
+    <td align="center" width="20%"><div style="background:#2b2926;padding:28px;">&nbsp;</div><strong>Ink</strong><br><code>#2B2926</code></td>
+    <td align="center" width="20%"><div style="background:#1f3d37;padding:28px;">&nbsp;</div><strong>Deep green</strong><br><code>#1F3D37</code></td>
+    <td align="center" width="20%"><div style="background:#cb8f5b;padding:28px;">&nbsp;</div><strong>Amber</strong><br><code>#CB8F5B</code></td>
+    <td align="center" width="20%"><div style="background:#8c4a3f;padding:28px;">&nbsp;</div><strong>Clay</strong><br><code>#8C4A3F</code></td>
+  </tr>
+</table>
+
+### 📸 The visual world
+
+<table>
+  <tr>
+    <td width="50%"><img src="./public/assets/khamrah-editorial.jpg" alt="Khamrah editorial still life"></td>
+    <td width="50%"><img src="./public/assets/catalog/campaign-perfume.jpeg" alt="Perfume campaign bottle"></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Editorial still life</strong><br><sub>Warm notes, texture, shadow</sub></td>
+    <td align="center"><strong>Campaign object</strong><br><sub>A bottle treated as a visual anchor</sub></td>
+  </tr>
+</table>
 
 ---
 
