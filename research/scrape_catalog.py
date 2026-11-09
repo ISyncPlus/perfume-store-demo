@@ -63,17 +63,36 @@ def notes_from_text(source):
     return notes
 
 
+def product_page_image(url):
+    source, _ = fetch(url)
+    matches = re.findall(
+        r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)',
+        source.decode("utf-8", errors="replace"),
+        re.I,
+    )
+    for image in matches:
+        image = image.replace("\\/", "/")
+        if "woocommerce-placeholder" not in image:
+            return image.replace("http://", "https://")
+    return ""
+
+
 def normalize(product, scraped_at):
     prices = product["prices"]
     short = text_from_html(product.get("short_description", ""))
     description = text_from_html(product.get("description", ""))
+    source_images = [{"url": image["src"], "alt": image.get("alt") or unescape(product["name"])} for image in product.get("images", [])]
+    if not source_images:
+        image = product_page_image(product["permalink"])
+        if image:
+            source_images = [{"url": image, "alt": unescape(product["name"])}]
     return {
         "id": product["id"], "name": unescape(product["name"]), "slug": product["slug"],
         "price": int(prices["price"] or 0) / (10 ** prices["currency_minor_unit"]),
         "currency": prices["currency_code"], "inStock": product["is_in_stock"],
         "purchasable": product["is_purchasable"], "url": product["permalink"],
         "image": "", "images": [],
-        "sourceImages": [{"url": image["src"], "alt": image.get("alt") or unescape(product["name"])} for image in product.get("images", [])],
+        "sourceImages": source_images,
         "description": description, "shortDescription": short,
         "notes": notes_from_text(short + "\n" + description),
         "categories": [unescape(item["name"]) for item in product.get("categories", [])],

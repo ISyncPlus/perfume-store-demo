@@ -1,9 +1,9 @@
 {
   "source": "https://lattafang.com/wp-json/wc/store/v1/products",
-  "scrapedAt": "2026-11-09T20:50:49.788373+00:00",
+  "scrapedAt": "2026-11-09T20:59:33.652641+00:00",
   "products": 710,
   "inStock": 328,
-  "localImages": 690,
+  "localImages": 712,
   "imageFailures": [],
   "scope": "Read-only public product data and first-party images. No private or customer endpoints.",
   "rights": "Source product names and images remain the property of their respective owners; retained for this private redesign pitch. Obtain the merchant's permission before publishing.",
