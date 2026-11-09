@@ -20,8 +20,11 @@ export interface Product {
     categories: string[];
     tags: string[];
 }
-const displayImages: Record<string, string> = { 'khamrah': '/assets/khamrah-cutout.png', 'fakhar-lattafa-men': '/assets/fakhar-black-cutout.png', 'fakhar-lattafa-women': '/assets/fakhar-rose-cutout.png' };
-export const products = (catalog as unknown as Product[]).map(p => ({ ...p, image: displayImages[p.slug] ?? p.image }));
+export const products = (catalog as unknown as Product[]).map(p => ({
+    ...p,
+    image: p.image,
+    images: p.images,
+}));
 export const money = (value: number) => new Intl.NumberFormat('en-NG', { style: 'currency', currency: 'NGN', maximumFractionDigits: 0 }).format(value);
 export const findProduct = (slug: string) => products.find(p => p.slug === slug)!;
 export const curatedSlugs = ['khamrah', 'fakhar-lattafa-men', 'fakhar-lattafa-women', 'yara-tous-2', 'angham', 'nebras', 'eclaire', 'yara'];

@@ -19,7 +19,7 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "research/raw"
 ASSETS = ROOT / "public/assets/catalog"
-ENDPOINT = "https://lattafa-demo.test/wp-json/wc/store/v1/products"
+ENDPOINT = "https://lattafang.com/wp-json/wc/store/v1/products"
 HEADERS = {"User-Agent": "LattafaNigeriaPitchResearch/1.0 (public product catalog; read-only)"}
 
 
@@ -107,7 +107,7 @@ def download_product_images(product):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--refresh", action="store_true", help="Refresh API snapshots instead of resuming saved pages")
-    parser.add_argument("--limit", type=int, default=80, help="Product image download limit (featured names first)")
+    parser.add_argument("--limit", type=int, default=0, help="Product image download limit; 0 downloads every product image")
     args = parser.parse_args()
     RAW.mkdir(parents=True, exist_ok=True)
     ASSETS.mkdir(parents=True, exist_ok=True)
@@ -137,7 +137,8 @@ def main():
         print(f"Catalog page {page}/{total_pages}: {len(batch)} products", flush=True)
     assert len({product['id'] for product in products}) == len(products), "Duplicate source IDs"
     priority = ["khamrah", "fakhar-lattafa-women", "fakhar-lattafa", "fakhar", "nebras", "yara", "yara-tous-2", "yara-tous", "yara-moi", "badee-al-oud-honor-glory", "badee-al-oud-amethyst", "eclaire", "angham", "asad", "teriaq", "ajwad", "mayar", "ishq-al-shuyukh-gold"]
-    selected = sorted(products, key=lambda product: (priority.index(product["slug"]) if product["slug"] in priority else len(priority), not any(name in product["name"].lower() for name in ["fakhar", "khamrah", "nebras", "yara"]), product["id"]))[:args.limit]
+    ordered = sorted(products, key=lambda product: (priority.index(product["slug"]) if product["slug"] in priority else len(priority), not any(name in product["name"].lower() for name in ["fakhar", "khamrah", "nebras", "yara"]), product["id"]))
+    selected = ordered if args.limit == 0 else ordered[:args.limit]
     for product in products:
         if product not in selected and product["sourceImages"]:
             product["image"] = product["sourceImages"][0]["url"]
