@@ -14,7 +14,7 @@
     "sourceCategoryIds": [
       66
     ],
-    "sourceUrl": "https://lattafang.com/product-category/lattafa/",
+    "sourceUrl": "https://lattafa-demo.test/product-category/lattafa/",
     "aliases": [],
     "productIds": [
       1225,
@@ -273,7 +273,7 @@
     ],
     "evidence": {
       "type": "public-product-categories",
-      "source": "https://lattafang.com/wp-json/wc/store/v1/products",
+      "source": "https://lattafa-demo.test/wp-json/wc/store/v1/products",
       "sourceCategoryCount": 253,
       "catalogSnapshotAt": "2026-10-23T17:48:32.362598+00:00",
       "note": "Membership follows the source category exactly; collection and brand groupings can overlap."
@@ -294,7 +294,7 @@
     "sourceCategoryIds": [
       84
     ],
-    "sourceUrl": "https://lattafang.com/product-category/asdaaf/",
+    "sourceUrl": "https://lattafa-demo.test/product-category/asdaaf/",
     "aliases": [
       "Asdaff",
       "asdaff"
@@ -324,7 +324,7 @@
     ],
     "evidence": {
       "type": "public-product-categories",
-      "source": "https://lattafang.com/wp-json/wc/store/v1/products",
+      "source": "https://lattafa-demo.test/wp-json/wc/store/v1/products",
       "sourceCategoryCount": 21,
       "catalogSnapshotAt": "2026-10-23T17:48:32.362598+00:00",
       "note": "Homepage tab misspells this name Asdaff. The public taxonomy name and canonical slug are Asdaaf / asdaaf."
@@ -345,7 +345,7 @@
     "sourceCategoryIds": [
       74
     ],
-    "sourceUrl": "https://lattafang.com/product-category/lattafa-pride/",
+    "sourceUrl": "https://lattafa-demo.test/product-category/lattafa-pride/",
     "aliases": [],
     "productIds": [
       227,
@@ -441,7 +441,7 @@
     ],
     "evidence": {
       "type": "public-product-categories",
-      "source": "https://lattafang.com/wp-json/wc/store/v1/products",
+      "source": "https://lattafa-demo.test/wp-json/wc/store/v1/products",
       "sourceCategoryCount": 90,
       "catalogSnapshotAt": "2026-10-23T17:48:32.362598+00:00",
       "note": "Membership follows the source category exactly; collection and brand groupings can overlap."
@@ -462,7 +462,7 @@
     "sourceCategoryIds": [
       76
     ],
-    "sourceUrl": "https://lattafang.com/product-category/rave/",
+    "sourceUrl": "https://lattafa-demo.test/product-category/rave/",
     "aliases": [],
     "productIds": [
       4759,
@@ -480,7 +480,7 @@
     ],
     "evidence": {
       "type": "public-product-categories",
-      "source": "https://lattafang.com/wp-json/wc/store/v1/products",
+      "source": "https://lattafa-demo.test/wp-json/wc/store/v1/products",
       "sourceCategoryCount": 12,
       "catalogSnapshotAt": "2026-10-23T17:48:32.362598+00:00",
       "note": "Membership follows the source category exactly; collection and brand groupings can overlap."
@@ -501,7 +501,7 @@
     "sourceCategoryIds": [
       17
     ],
-    "sourceUrl": "https://lattafang.com/product-category/alhambra/",
+    "sourceUrl": "https://lattafa-demo.test/product-category/alhambra/",
     "aliases": [
       "Maison Alhambra"
     ],
@@ -796,7 +796,7 @@
     ],
     "evidence": {
       "type": "public-category-filter",
-      "source": "https://lattafang.com/wp-json/wc/store/v1/products?category=17&per_page=100&page={1,2,3}&_fields=id",
+      "source": "https://lattafa-demo.test/wp-json/wc/store/v1/products?category=17&per_page=100&page={1,2,3}&_fields=id",
       "sourceCategoryCount": 287,
       "catalogSnapshotAt": "2026-10-23T17:48:32.362598+00:00",
       "note": "The public per-product categories array omits this category. These IDs were recovered directly with the public category=17 filter; do not infer membership from product names."
@@ -817,7 +817,7 @@
     "sourceCategoryIds": [
       78
     ],
-    "sourceUrl": "https://lattafang.com/product-category/niche-emarati/",
+    "sourceUrl": "https://lattafa-demo.test/product-category/niche-emarati/",
     "aliases": [],
     "productIds": [
       245,
@@ -840,7 +840,7 @@
     ],
     "evidence": {
       "type": "public-product-categories",
-      "source": "https://lattafang.com/wp-json/wc/store/v1/products",
+      "source": "https://lattafa-demo.test/wp-json/wc/store/v1/products",
       "sourceCategoryCount": 17,
       "catalogSnapshotAt": "2026-10-23T17:48:32.362598+00:00",
       "note": "Membership follows the source category exactly; collection and brand groupings can overlap."
@@ -861,7 +861,7 @@
     "sourceCategoryIds": [
       101
     ],
-    "sourceUrl": "https://lattafang.com/product-category/al-zafaran/",
+    "sourceUrl": "https://lattafa-demo.test/product-category/al-zafaran/",
     "aliases": [
       "AL zafaran"
     ],
@@ -877,7 +877,7 @@
     ],
     "evidence": {
       "type": "public-product-categories",
-      "source": "https://lattafang.com/wp-json/wc/store/v1/products",
+      "source": "https://lattafa-demo.test/wp-json/wc/store/v1/products",
       "sourceCategoryCount": 8,
       "catalogSnapshotAt": "2026-10-23T17:48:32.362598+00:00",
       "note": "Membership follows the source category exactly; collection and brand groupings can overlap."
@@ -898,7 +898,7 @@
     "sourceCategoryIds": [
       77
     ],
-    "sourceUrl": "https://lattafang.com/product-category/vurv/",
+    "sourceUrl": "https://lattafa-demo.test/product-category/vurv/",
     "aliases": [],
     "productIds": [
       5892,
@@ -906,7 +906,7 @@
     ],
     "evidence": {
       "type": "public-product-categories",
-      "source": "https://lattafang.com/wp-json/wc/store/v1/products",
+      "source": "https://lattafa-demo.test/wp-json/wc/store/v1/products",
       "sourceCategoryCount": 2,
       "catalogSnapshotAt": "2026-10-23T17:48:32.362598+00:00",
       "note": "Membership follows the source category exactly; collection and brand groupings can overlap."
@@ -927,7 +927,7 @@
     "sourceCategoryIds": [
       97
     ],
-    "sourceUrl": "https://lattafang.com/product-category/lattafa-pride-2/",
+    "sourceUrl": "https://lattafa-demo.test/product-category/lattafa-pride-2/",
     "aliases": [],
     "productIds": [
       7273,
@@ -939,7 +939,7 @@
     ],
     "evidence": {
       "type": "public-product-categories",
-      "source": "https://lattafang.com/wp-json/wc/store/v1/products",
+      "source": "https://lattafa-demo.test/wp-json/wc/store/v1/products",
       "sourceCategoryCount": 6,
       "catalogSnapshotAt": "2026-10-23T17:48:32.362598+00:00",
       "note": "Membership follows the source category exactly; collection and brand groupings can overlap."

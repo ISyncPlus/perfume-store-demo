@@ -19,7 +19,7 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "research/raw"
 ASSETS = ROOT / "public/assets/catalog"
-ENDPOINT = "https://lattafang.com/wp-json/wc/store/v1/products"
+ENDPOINT = "https://lattafa-demo.test/wp-json/wc/store/v1/products"
 HEADERS = {"User-Agent": "LattafaNigeriaPitchResearch/1.0 (public product catalog; read-only)"}
 
 

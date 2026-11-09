@@ -1,6 +1,6 @@
 # Public Store API checkout feasibility
 
-23 October 2026. Target: https://lattafang.com/wp-json/wc/store/v1/. App unchanged.
+23 October 2026. Target: https://lattafa-demo.test/wp-json/wc/store/v1/. App unchanged.
 
 **Answer:** WooCommerce supports headless cart/checkout without private API credentials, using a per-shopper Cart-Token. This merchant exposes that capability and currently lists `paystack`. However, its actual GET responses omit `Access-Control-Allow-Origin`, so a browser on another origin cannot presently read them. Direct cross-origin checkout is **not yet viable as configured**. A merchant CORS fix or a same-origin backend proxy is needed before integrating the token flow. Payment completion remains untested.
 

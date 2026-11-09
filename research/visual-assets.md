@@ -3,8 +3,8 @@
 ## Observed source material
 
 - Lattafa Nigeria catalog and 75 local source images: `catalog-provenance.json`, `raw/products-page-1.json` through `raw/products-page-7.json`. Product URLs and original image URLs are preserved per record in `src/data/catalog.json`.
-- Source wordmark: `public/assets/catalog/brand-logo.svg`, from `https://lattafang.com/wp-content/uploads/2024/08/Screenshot_2024-08-16_193643-removebg-preview.svg`. Copyright remains with the brand.
-- Unused source campaign image: `public/assets/catalog/campaign-perfume.jpeg`, from `https://lattafang.com/wp-content/uploads/2024/10/banner-bg-h6.jpeg`. Retained as research; it is not shown in the final design.
+- Source wordmark: `public/assets/catalog/brand-logo.svg`, from `https://lattafa-demo.test/wp-content/uploads/2024/08/Screenshot_2024-08-16_193643-removebg-preview.svg`. Copyright remains with the brand.
+- Unused source campaign image: `public/assets/catalog/campaign-perfume.jpeg`, from `https://lattafa-demo.test/wp-content/uploads/2024/10/banner-bg-h6.jpeg`. Retained as research; it is not shown in the final design.
 - Outfit font: local Google Fonts files in `public/assets/fonts/`, originally served by `fonts.gstatic.com`. Outfit is the source website's display family.
 
 ## Generated or adapted assets

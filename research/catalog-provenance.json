@@ -1,5 +1,5 @@
 {
-  "source": "https://lattafang.com/wp-json/wc/store/v1/products",
+  "source": "https://lattafa-demo.test/wp-json/wc/store/v1/products",
   "scrapedAt": "2026-10-23T17:48:32.362598+00:00",
   "products": 697,
   "inStock": 310,
